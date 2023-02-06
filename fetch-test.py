@@ -65,5 +65,5 @@ if __name__ == "__main__":
             result += part * (10 ** (len(parts) - i - 1))
         user_info["app_version"] = result
         user_logins.append((user_info["user_id"], user_info["device_type"], user_info["ip"], user_info["device_id"], user_info["locale"], user_info["app_version"], date.today()))
-    print(user_logins)
+    # print(user_logins)
     insert_user_logins(user_logins)
